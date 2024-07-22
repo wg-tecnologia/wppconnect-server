@@ -30,5 +30,5 @@ RUN apk add --no-cache chromium
 RUN yarn cache clean
 COPY . .
 COPY --from=build /usr/src/wpp-server/ /usr/src/wpp-server/
-EXPOSE 21465
+EXPOSE 21468
 ENTRYPOINT ["node", "dist/server.js"]
